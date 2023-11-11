@@ -1,6 +1,4 @@
-# Your React App Name
-
-Welcome to [Your React App Name]! This is a brief guide to help you set up and run the project locally.
+# Employees Data
 
 ## Prerequisites
 
