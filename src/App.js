@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import ProgressBar from './components/ProgressBar';
+import CreateData from './components/createData/CreateData';
+import DataTable from './components/dataTable/DataTable';
 
 function App() {
+  // progress bar state
+  const [progressStatus, setProgressStatus] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {progressStatus !== 0 &&
+        <ProgressBar progressStatus={progressStatus} />
+      }
+      <CreateData setProgressStatus={setProgressStatus} />
+      <DataTable />
+    </>
   );
 }
 

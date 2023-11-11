@@ -1,0 +1,176 @@
+.data-table {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .table-heading {
+    font-size: 24px;
+    color: #333; /* Change the color as needed */
+    margin: 0;
+  }
+  
+  .search-filter {
+    display: flex;
+    align-items: center;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-right: 10px;
+    /* width: 300px; Increase the width as needed */
+  }
+  
+  .search-button{
+    width: fit-content;
+    padding: 10px 15px;
+    background-color: black; /* Change the button color as needed */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 .2rem;
+  }
+  
+  .filter-button {
+    margin-left: 1rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6c6c6c; /* Change the button color for filtering as needed */
+  }
+
+  .search-button:hover, .filter-button:hover{
+    background-color: rgb(160, 160, 160);
+  }
+  
+  .filter-popup {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 10px;
+    /* Add more styles for the filter popup as needed */
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th,
+  table td {
+    padding: 10px 15px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #565656;
+    color: #fff;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #ddd;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* filter.... */
+  /* Style the container */
+.filter-popup {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+/* Style the filter row */
+.filter-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Style each filter section */
+.filter-section {
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+/* Style the headings */
+.filter-section h3 {
+  font-size: 16px;
+  /* margin: 0; */
+  color: #333;
+}
+
+.sortByHeading{
+  width: 8rem;
+}
+
+.filterHeading{
+  width: 5rem;
+}
+
+/* Style the select dropdowns */
+.filter-section select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Style the buttons */
+.apply-button, .clear-button {
+  padding: 10px 20px;
+  background-color: #0074cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.apply-button:hover, .clear-button:hover {
+  background-color: #0059aa;
+}
+
+.button-container{
+  display: flex;
+  gap: 1rem;
+}
